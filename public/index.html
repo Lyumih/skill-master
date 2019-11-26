@@ -2,43 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Контроль Свежести</title>
+    <title>Skill Master</title>
 </head>
 <body>
 <div>
-    <h1>Контроль Свежести</h1>
-    <div>
-        Разделы:
-        <select name="" id="">
-            <option value="">Таблетки</option>
-            <option value="">Косметика</option>
-        </select>
-        <button>Добавить свой раздел</button>
-    </div>
-    <hr>
-    <div>Название
-        <input type="text" placeholder="Название">
-    </div>
-    <div>Дата производства
-        <input type="date" placeholder="Название">
-    </div>
-    <div>Срок годности, мес.
-        <input type="number" placeholder="4 мес">
-    </div>
+    <h1>Skill Master</h1>
+    <strong>Имя умения: <input></strong>
     <button>Сохранить</button>
+    <button>Экспортировать в JSON</button>
+    <button>Настроить схему экспорта</button>
 
-    <hr>
-    <div>Фото
-        <input type="file" placeholder="4 мес">
-        <img src="" alt="Фотография">
-    </div>
-    <div>Описание
-        <input type="text" placeholder="очень хороший препорат">
-    </div>
-    <div>Инструкция
-        <input type="text" placeholder="2 раза в день">
-    </div>
-    <button>Добавить своё</button>
+    <table width="100%" border="1" align="top">
+        <tr>
+            <td>
+                <h1>Доступные действия</h1>
+                <ul>
+
+                    <li>Атака</li>
+                    <li>Защита</li>
+                    <li>Пропуск действия</li>
+                </ul>
+            </td>
+            <td>
+                <h1>Логика умения</h1>
+                <div>
+                    <h3>Шаг 1</h3>
+                    <div>Атаковать 10</div>
+                    <input title="Сообщение в логи" placeholder="сообщение в логи">
+                    <button>Добавить действие</button>
+                    <button>Удалить шаг</button>
+                </div>
+                <hr>
+                <div>
+                    <h3>Шаг 2</h3>
+                    <div>Защищаться 5</div>
+                    <input title="Сообщение в логи" placeholder="сообщение в логи" value="Ты не пройдёшь">
+                    <button>Добавить действие</button>
+                    <button>Удалить шаг</button>
+                </div>
+                <hr>
+                <button>Добавить шаг</button>
+            </td>
+            <td>
+                <h1>Обработка ошибок</h1>
+                <div>
+                    <h3>По умолчанию</h3>
+                    <p>Действие не удалось</p>
+                    <h3>Шаг 1</h3>
+                    <input type="text" value="Всё очень плохо">
+                    <h3>Шаг 2</h3>
+                    <input type="text">
+                </div>
+            </td>
+            <td>
+                <h1>Различные примеры</h1>
+                <h3>Пример 1. Маникен</h3>
+                <div>Лог: Удачно ударил на 20</div>
+                <h3>Пример 2. Рандомное умение защиты. </h3>
+                <div>Лог: Действие не удалось</div>
+            </td>
+        </tr>
+    </table>
+
 
 </div>
 
